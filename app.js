@@ -1,6 +1,6 @@
 'use strict'
 
-require ('dotenv');
+require ('dotenv').config();
 const express = require('express');
 const fetch = require('node-fetch');
 const redirectToHTTPS = require('express-http-to-https').redirectToHTTPS;
@@ -24,7 +24,7 @@ function generateFakeForecast(locationLatLon) {
 function getForecast(req, res) {
   const locationLatLon = req.params.location || '40.7720232,-73.9732319';
   const url = `${BASE_URL}/${API_KEY}/${locationLatLon}`;
-  
+
   fetch(url).then((res) => {
     return res.json();
   }).then((data) => {
