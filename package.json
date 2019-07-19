@@ -1,0 +1,29 @@
+{
+  "name": "hello-weather-pwa",
+  "version": "1.0.0",
+  "description": "Simple PWApp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/reggietheroman/hello-weather-pwa.git"
+  },
+  "keywords": [
+    "PWA",
+    "NodeJs"
+  ],
+  "author": "Reggie Bigornia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reggietheroman/hello-weather-pwa/issues"
+  },
+  "homepage": "https://github.com/reggietheroman/hello-weather-pwa#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-http-to-https": "^1.1.4",
+    "node-fetch": "^2.6.0"
+  }
+}
